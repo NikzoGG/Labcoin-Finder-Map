@@ -1,20 +1,28 @@
 import pyautogui
+import requests
 import numpy 
 import pygame
 from time import sleep
 
+#RUN THE SCRIPT WITH TINYTASK RESETTING THE LABCOIN APP SO THE COIN CAN EVENTUALLY POP UP ON THE SCREEN
+#RUN THE SCRIPT WITH TINYTASK RESETTING THE LABCOIN APP SO THE COIN CAN EVENTUALLY POP UP ON THE SCREEN
+#RUN THE SCRIPT WITH TINYTASK RESETTING THE LABCOIN APP SO THE COIN CAN EVENTUALLY POP UP ON THE SCREEN
+#REMOVE THE # INFRONT OF THE FOUND SOUND LINES IF YOU WANT TO START A LOUD SOUND WHEN A COIN IS DETECTED
+
 pygame.init()
 pygame.mixer.init()
 
-found_sound = pygame.mixer.Sound("sound.mp3")
-found_sound.set_volume(0.04)
+DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1338846147837694012/gxPUy1ghZks5XV0RLV5drXk1qcDbfUMCXvxYRgvvkxR1-oau6PSkm40hPLwa0VWXTljW"
+
+def sendmessage(content):
+    data = {"content": content}
+    requests.post(DISCORD_WEBHOOK_URL, json=data)
+
+#found_sound = pygame.mixer.Sound("sound.mp3")
+#found_sound.set_volume(0.04)
 TARGET_COLOR = (187,135,206)
 
-#Za publichni cveta
-#187,135,206
 
-
- 
 
 
 TOLERANCE = 10  
@@ -45,17 +53,16 @@ def main():
         while True:                      
             coordinates = find_color_on_screen(TARGET_COLOR, TOLERANCE)
             if coordinates:
-                found_sound.play()
+                #found_sound.play()
+                for l in range(25):
+                    sendmessage("ПУСНАХА ПУБЛИЧЕН ЛАБКОЙН В ПРИЛОЖЕНИЕТО!!!")
                 print("Color found")
                 colorfound = True
+                break
             else:
                 print("Color not found.")
                 pass
             
-            if colorfound == True:
-                seenthing = input("Vidq li koina otgovori za da spresh zvuka/da/ ")
-                if seenthing == "da":
-                    break
 
             sleep(1)
     except KeyboardInterrupt:
@@ -63,5 +70,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
