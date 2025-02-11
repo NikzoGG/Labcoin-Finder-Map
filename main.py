@@ -12,7 +12,7 @@ from time import sleep
 pygame.init()
 pygame.mixer.init()
 
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1338846147837694012/gxPUy1ghZks5XV0RLV5drXk1qcDbfUMCXvxYRgvvkxR1-oau6PSkm40hPLwa0VWXTljW"
+DISCORD_WEBHOOK_URL = "HERE YOU WILL PUT YOUR DISCORD SERVER WEBHOOK"
 
 def sendmessage(content):
     data = {"content": content}
