@@ -7,11 +7,11 @@ pygame.init()
 pygame.mixer.init()
 
 found_sound = pygame.mixer.Sound("sound.mp3")
-found_sound.set_volume(0.08)
-TARGET_COLOR = (182, 88, 205)  
+found_sound.set_volume(0.04)
+TARGET_COLOR = (187,135,206)
 
 #Za publichni cveta
-#182,88,205
+#187,135,206
 
 
  
@@ -63,4 +63,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
