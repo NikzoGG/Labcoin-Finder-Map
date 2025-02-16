@@ -12,7 +12,7 @@ from time import sleep
 pygame.init()
 pygame.mixer.init()
 
-DISCORD_WEBHOOK_URL = "HERE YOU WILL PUT YOUR DISCORD SERVER WEBHOOK"
+DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1338846147837694012/gxPUy1ghZks5XV0RLV5drXk1qcDbfUMCXvxYRgvvkxR1-oau6PSkm40hPLwa0VWXTljW"
 
 def sendmessage(content):
     data = {"content": content}
@@ -20,7 +20,7 @@ def sendmessage(content):
 
 #found_sound = pygame.mixer.Sound("sound.mp3")
 #found_sound.set_volume(0.04)
-TARGET_COLOR = (187,135,206)
+TARGET_COLOR = (138,96,170)
 
 
 
@@ -70,6 +70,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
 
 
 
