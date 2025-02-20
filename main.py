@@ -8,6 +8,7 @@ from time import sleep
 #RUN THE SCRIPT WITH TINYTASK RESETTING THE LABCOIN APP SO THE COIN CAN EVENTUALLY POP UP ON THE SCREEN
 #RUN THE SCRIPT WITH TINYTASK RESETTING THE LABCOIN APP SO THE COIN CAN EVENTUALLY POP UP ON THE SCREEN
 #REMOVE THE # INFRONT OF THE FOUND SOUND LINES IF YOU WANT TO START A LOUD SOUND WHEN A COIN IS DETECTED
+#IF THE SCRIPTS HAS SOMETHING PURPLE IN THE CODE SCROLL DOWN SO IT DOESNT SEE IT BECAUSSE IT MIGTH DETECT ITT AS A COIN
 
 pygame.init()
 pygame.mixer.init()
@@ -20,7 +21,7 @@ def sendmessage(content):
 
 #found_sound = pygame.mixer.Sound("sound.mp3")
 #found_sound.set_volume(0.04)
-TARGET_COLOR = (138,96,170)
+TARGET_COLOR = (117,58,149)
 
 
 
@@ -70,6 +71,24 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
