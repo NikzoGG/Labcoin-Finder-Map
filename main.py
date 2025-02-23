@@ -26,7 +26,7 @@ TARGET_COLOR = (117,58,149)
 
 
 
-TOLERANCE = 10  
+TOLERANCE = 4  
 
 def find_color_on_screen(target_color, tolerance=0):
     
