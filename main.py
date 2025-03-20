@@ -59,7 +59,6 @@ def main():
                     sendmessage("ПУСНАХА ПУБЛИЧЕН ЛАБКОЙН В ПРИЛОЖЕНИЕТО!!!")
                 print("Color found")
                 colorfound = True
-                break
             else:
                 print("Color not found.")
                 pass
